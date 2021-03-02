@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: rgb(29, 26, 26);
+  font-weight: normal;
+}
+
+.app {
+  transition: all 0.3s ease;
+}
+
+.app-active {
+  margin-left: 15%;
+}
+
+.dev-link {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+  z-index: -555;
+}
+
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./nav";
+
+@media screen and (max-width: 678px) {
+  .app-active {
+    margin-left: 20%;
+  }
+}
